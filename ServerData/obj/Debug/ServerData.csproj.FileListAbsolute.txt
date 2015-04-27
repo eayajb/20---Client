@@ -1,0 +1,7 @@
+C:\Users\psxjrbu.AD\Documents\Visual Studio 2013\Projects\20 - Client\ServerData\bin\Debug\ServerData.dll
+C:\Users\psxjrbu.AD\Documents\Visual Studio 2013\Projects\20 - Client\ServerData\bin\Debug\ServerData.pdb
+C:\Users\psxjrbu.AD\Documents\Visual Studio 2013\Projects\20 - Client\ServerData\bin\Debug\Microsoft.Kinect.dll
+C:\Users\psxjrbu.AD\Documents\Visual Studio 2013\Projects\20 - Client\ServerData\bin\Debug\Microsoft.Kinect.xml
+C:\Users\psxjrbu.AD\Documents\Visual Studio 2013\Projects\20 - Client\ServerData\obj\Debug\ServerData.csprojResolveAssemblyReference.cache
+C:\Users\psxjrbu.AD\Documents\Visual Studio 2013\Projects\20 - Client\ServerData\obj\Debug\ServerData.dll
+C:\Users\psxjrbu.AD\Documents\Visual Studio 2013\Projects\20 - Client\ServerData\obj\Debug\ServerData.pdb

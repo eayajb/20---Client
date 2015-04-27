@@ -1,0 +1,17 @@
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\bin\Debug\20 - Client.exe.config
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\bin\Debug\20 - Client.exe
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\bin\Debug\20 - Client.pdb
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\bin\Debug\Microsoft.Kinect.dll
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\bin\Debug\ServerData.dll
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\bin\Debug\ServerData.pdb
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\bin\Debug\Microsoft.Kinect.xml
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\obj\Debug\20 - Client.csprojResolveAssemblyReference.cache
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\obj\Debug\MainWindow.baml
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\obj\Debug\MainWindow.g.cs
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\obj\Debug\App.g.cs
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\obj\Debug\20 - Client_MarkupCompile.cache
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\obj\Debug\20 - Client.g.resources
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\obj\Debug\_20___Client.Properties.Resources.resources
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\obj\Debug\20 - Client.csproj.GenerateResource.Cache
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\obj\Debug\20 - Client.exe
+c:\users\psxjrbu.ad\documents\visual studio 2013\Projects\20 - Client\20 - Client\obj\Debug\20 - Client.pdb
