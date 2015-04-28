@@ -100,7 +100,6 @@ namespace _20___Client
                     var depthDesc = depthFrame.FrameDescription;
                     ushort[] depthData = new ushort[depthDesc.LengthInPixels];
                     depthFrame.CopyFrameDataToArray(depthData);
-                    clientHelper.AddDepthData(depthData);
                 }
 
 
@@ -157,8 +156,6 @@ namespace _20___Client
             {
                 if( inputState == "t")
                     this.clientHelper.SendBodyData();
-                if (inputState == "d")
-                    this.clientHelper.SendDepthData();
                 Client.inputState = "z";
 
                 ///DISPOSE
