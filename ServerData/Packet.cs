@@ -1,10 +1,11 @@
-﻿using Microsoft.Kinect;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Windows.Media.Media3D;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ServerData
 {
@@ -17,12 +18,16 @@ namespace ServerData
         public List<Person> personList;
         public PacketType packetType;
 
+        public ushort[] depthData;
+
         public Packet(PacketType type, string senderID)
         {
             this.referenceFrameData = new double[10];
             this.personList = new List<Person>();
             this.clientID = senderID;
             this.packetType = type;
+
+            this.depthData = new ushort[(512 * 424)];
         }
 
         public Packet(byte[] packetBytes)
@@ -51,6 +56,8 @@ namespace ServerData
                 this.referenceFrameData = p.referenceFrameData;
                 this.personList = p.personList;
                 this.packetType = p.packetType;
+
+                this.depthData = p.depthData;
             }
         }
 
@@ -110,6 +117,7 @@ namespace ServerData
     public enum PacketType
     {
         RegisterClient,
+        DepthData,
         InputCode,
         Transfer
     }

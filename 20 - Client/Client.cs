@@ -92,6 +92,21 @@ namespace _20__Client
             SendPacket( inputCodePacket );
         }
 
+        Packet depthDataPacket = null;
+        public void AddDepthData( ushort[] inputData )
+        {
+            if( depthDataPacket == null )
+                depthDataPacket = new Packet( PacketType.DepthData, CLIENT_ID );
+            depthDataPacket.depthData = inputData;
+        }
+
+        public void SendDepthData()
+        {
+            if (this.depthDataPacket != null)
+                SendPacket( depthDataPacket );
+            this.depthDataPacket = null;
+        }
+
         Packet bodyDataPacket = null;
         public void AddBodyData( double personID, Dictionary<JointType, Point3D> bodyDictIn, List<ColorSpacePoint> csPointsIn )
         {

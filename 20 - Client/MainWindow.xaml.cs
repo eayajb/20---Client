@@ -37,7 +37,7 @@ namespace _20___Client
             this.clientHelper = new Client();
 
             this.kinect = KinectSensor.GetDefault();
-            this.msfr = this.kinect.OpenMultiSourceFrameReader(FrameSourceTypes.Body);
+            this.msfr = this.kinect.OpenMultiSourceFrameReader( FrameSourceTypes.Body | FrameSourceTypes.Depth );
 
             msfr.MultiSourceFrameArrived += msfr_MultiSourceFrameArrived;
 
@@ -81,6 +81,7 @@ namespace _20___Client
 
             ///DECLARE FRAMES
             BodyFrame bodyFrame = null;
+            DepthFrame depthFrame = null;
 
             ///ACQUIRE AND VALIDATE FRAME
             MultiSourceFrame multiSourceFrame = e.FrameReference.AcquireFrame();
@@ -92,6 +93,17 @@ namespace _20___Client
 
             try
             {
+                depthFrame = multiSourceFrame.DepthFrameReference.AcquireFrame();
+
+                if (inputState == "d")
+                {
+                    var depthDesc = depthFrame.FrameDescription;
+                    ushort[] depthData = new ushort[depthDesc.LengthInPixels];
+                    depthFrame.CopyFrameDataToArray(depthData);
+                    clientHelper.AddDepthData(depthData);
+                }
+
+
                 bodyFrame = multiSourceFrame.BodyFrameReference.AcquireFrame();
 
                 if ((bodyFrame == null))
@@ -143,7 +155,10 @@ namespace _20___Client
             }
             finally
             {
-                this.clientHelper.SendBodyData();
+                if( inputState == "t")
+                    this.clientHelper.SendBodyData();
+                if (inputState == "d")
+                    this.clientHelper.SendDepthData();
                 Client.inputState = "z";
 
                 ///DISPOSE
@@ -151,6 +166,9 @@ namespace _20___Client
                 {
                     bodyFrame.Dispose();
                 }
+
+                if (depthFrame != null)
+                    depthFrame.Dispose();
             }
         }
 
